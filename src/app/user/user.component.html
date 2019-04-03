@@ -1,0 +1,31 @@
+<div style="text-align:center">
+<h1>
+  Congratz, you successfully link to the router, now please link the input with the name and the city
+</h1>
+</div>
+
+<div style="text-align:center; padding-bottom: 10px">
+Name : <input matInput 
+               type="text"
+               placeholder="type name" />
+</div>
+<div style="text-align:center">
+City : <input matInput
+    type="text"
+    placeholder="type city" />
+</div>
+
+<div>
+  
+  <div *ngIf="!(getName && getCity)" style="text-align: center">
+      <h3> You haven't successfully link to the input </h3>
+  </div>
+ 
+  <div *ngIf="getCity && getName" style="padding-bottom: 20px; text-align: center">
+   <h3> Congratz, you have link the name and the city to the input </h3>
+    <div>
+    <span>The name is : {{getName}}</span><br>
+    <span>the city : {{getCity}}</span>
+  </div>
+  </div>
+</div>
