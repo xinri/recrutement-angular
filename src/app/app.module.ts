@@ -10,12 +10,16 @@ import {MatNativeDateModule, MatCardModule, MatInputModule} from '@angular/mater
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ErrorComponent } from './error/error.component';
+import { Exercice1Component } from './exercice1/exercice1.component';
+import { UsernamedisplayerComponent } from './exercice1/usernamedisplayer/usernamedisplayer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    ErrorComponent
+    ErrorComponent,
+    Exercice1Component,
+    UsernamedisplayerComponent
   ],
   imports: [
     BrowserModule,
